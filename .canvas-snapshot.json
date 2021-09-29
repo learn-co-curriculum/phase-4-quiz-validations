@@ -1,0 +1,487 @@
+{
+  "quiz": {
+    "id": 18303,
+    "title": "Validations Quiz",
+    "html_url": "https://learning.flatironschool.com/courses/4182/quizzes/18303",
+    "mobile_url": "https://learning.flatironschool.com/courses/4182/quizzes/18303?force_user=1&persist_headless=1",
+    "description": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;It's time to check your knowledge! Use this quiz to create a custom study guide. Note any answers that were marked incorrect, so you can study the relevant material and try this quiz again.\\n\\nIf you don't know the answer to a question, please do not guess. Instead, select \\&quot;I don't know\\&quot;. It's OK not to know everything and to admit when we're unsure.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:33667,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:16573901},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;18&quot;:1}\">It's time to check your knowledge! Use this quiz to create a custom study guide. Note any answers that were marked incorrect, so you can study the relevant material and try this quiz again.<br><br>If you don't know the answer to a question, please do not guess. Instead, select \"I don't know\". It's OK not to know everything and to admit when we're unsure.</span></p>\n<p>Check the <a class=\"inline_disabled\" href=\"https://guides.rubyonrails.org/active_record_validations.html\" target=\"_blank\">Active Record Validations docs</a> if you need help!</p>",
+    "quiz_type": "assignment",
+    "time_limit": null,
+    "timer_autosubmit_disabled": false,
+    "shuffle_answers": true,
+    "show_correct_answers": true,
+    "scoring_policy": "keep_highest",
+    "allowed_attempts": 3,
+    "one_question_at_a_time": true,
+    "question_count": 7,
+    "points_possible": 7.0,
+    "cant_go_back": false,
+    "access_code": null,
+    "ip_filter": null,
+    "due_at": null,
+    "lock_at": null,
+    "unlock_at": null,
+    "published": false,
+    "unpublishable": true,
+    "locked_for_user": true,
+    "lock_info": {
+      "missing_permission": "participate_as_student",
+      "asset_string": "quizzes:quiz_18303"
+    },
+    "lock_explanation": "This quiz is currently locked.",
+    "hide_results": null,
+    "show_correct_answers_at": null,
+    "hide_correct_answers_at": null,
+    "all_dates": [
+      {
+        "due_at": null,
+        "unlock_at": null,
+        "lock_at": null,
+        "base": true
+      }
+    ],
+    "can_unpublish": true,
+    "can_update": true,
+    "require_lockdown_browser": false,
+    "require_lockdown_browser_for_results": false,
+    "require_lockdown_browser_monitor": false,
+    "lockdown_browser_monitor_data": null,
+    "speed_grader_url": null,
+    "permissions": {
+      "manage": true,
+      "read": true,
+      "create": true,
+      "update": true,
+      "submit": true,
+      "preview": true,
+      "delete": true,
+      "read_statistics": true,
+      "grade": true,
+      "review_grades": true,
+      "view_answer_audits": true
+    },
+    "quiz_reports_url": "https://learning.flatironschool.com/api/v1/courses/4182/quizzes/18303/reports",
+    "quiz_statistics_url": "https://learning.flatironschool.com/api/v1/courses/4182/quizzes/18303/statistics",
+    "message_students_url": "https://learning.flatironschool.com/api/v1/courses/4182/quizzes/18303/submission_users/message",
+    "section_count": 1,
+    "important_dates": false,
+    "quiz_submission_versions_html_url": "https://learning.flatironschool.com/courses/4182/quizzes/18303/submission_versions",
+    "assignment_id": 124632,
+    "one_time_results": false,
+    "only_visible_to_overrides": false,
+    "assignment_group_id": 8385,
+    "show_correct_answers_last_attempt": true,
+    "version_number": 4,
+    "has_access_code": false,
+    "post_to_sis": false,
+    "migration_id": null,
+    "question_types": [
+      "multiple_answers_question",
+      "multiple_choice_question",
+      "short_answer_question"
+    ]
+  },
+  "questions": [
+    {
+      "quiz_id": 18303,
+      "id": 123893,
+      "quiz_group_id": null,
+      "assessment_question_id": 134160,
+      "position": null,
+      "question_name": "Validations",
+      "question_type": "multiple_answers_question",
+      "question_text": "<p>Which of the following Active Record methods will trigger model validations?</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": "3165",
+          "text": ".create",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": "2099",
+          "text": ".save",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": "4912",
+          "text": ".update",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": "7414",
+          "text": ".valid?",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": "9556",
+          "text": ".new",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        },
+        {
+          "id": "740",
+          "text": ".destroy",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        },
+        {
+          "id": "701",
+          "text": ".valdiate",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        },
+        {
+          "id": "7949",
+          "text": ".errors",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18303,
+      "id": 123894,
+      "quiz_group_id": null,
+      "assessment_question_id": 134161,
+      "position": null,
+      "question_name": "Validations",
+      "question_type": "multiple_answers_question",
+      "question_text": "<p>At what point in time in a model's lifecycle do validations run?</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": "4152",
+          "text": "Before a new record is saved to the database",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": "6251",
+          "text": "Before an existing record in the database is updated",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": "1409",
+          "text": "Before a new instance of the model is created",
+          "comments": "",
+          "comments_html": "<p>This one is tricky! It's possible to create a new instance of a model using Active Record without saving that record to the database immediately. For example:</p>\n<div>\n<pre><span>Dog</span><span>.</span><span>new</span><span>(</span><span>name:</span> <span>\"Fezzik\"</span><span>)</span><br><span># =&gt; creates a new dog instance</span><br><br><span>Dog</span><span>.</span><span>save</span><br><span># =&gt; saves the dog to the database, triggering validation</span></pre>\n</div>",
+          "weight": 0.0
+        },
+        {
+          "id": "1642",
+          "text": "Before an existing record is deleted from the database",
+          "comments": "",
+          "comments_html": "<p>Deleting a record from the database doesn't trigger validations; only creating or updating a record will cause the record to be validated.</p>",
+          "weight": 0.0
+        },
+        {
+          "id": "8155",
+          "text": "When an existing record is found in the database",
+          "comments": "",
+          "comments_html": "<p>Looking up data in the database doesn't trigger validations; only creating or updating a record will cause the record to be validated.</p>",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18303,
+      "id": 123895,
+      "quiz_group_id": null,
+      "assessment_question_id": 134162,
+      "position": null,
+      "question_name": "Validations",
+      "question_type": "multiple_choice_question",
+      "question_text": "<p>Which of these validations is most appropriate for making sure that a model's&nbsp;<strong>name</strong> is not empty?</p>\n<p>Check the <a class=\"inline_disabled\" href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\" target=\"_blank\">Active Record Validations docs</a> if you need help!</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 7760,
+          "text": "validates :name, presence: true",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": 579,
+          "text": "validates :name, length: { minimum: 0 }",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        },
+        {
+          "id": 415,
+          "text": "validates :name, inclusion: 1..10",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        },
+        {
+          "id": 4707,
+          "text": "validates :name, acceptance: true",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18303,
+      "id": 123896,
+      "quiz_group_id": null,
+      "assessment_question_id": 134163,
+      "position": null,
+      "question_name": "Validations",
+      "question_type": "multiple_choice_question",
+      "question_text": "<p>Which of these validations is most appropriate for making sure that a model's&nbsp;<strong>category</strong> must be either \"Fruit\" or \"Vegetable\"?</p>\n<p>Check the <a class=\"inline_disabled\" href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\" target=\"_blank\">Active Record Validations docs</a> if you need help!</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 378,
+          "text": "validates :category, inclusion: { in: [\"Fruit\", \"Vegetable\" }",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": 6485,
+          "text": "validates :category, must_be: [\"Fruit\", \"Vegetable\"]",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        },
+        {
+          "id": 1482,
+          "text": "validates :category, one_of: [\"Fruit\", \"Vegetable\"]",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        },
+        {
+          "id": 764,
+          "text": "validates :category, presence: { in: [\"Fruit\", \"Vegetable\"] }",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18303,
+      "id": 123897,
+      "quiz_group_id": null,
+      "assessment_question_id": 134164,
+      "position": null,
+      "question_name": "Validations",
+      "question_type": "multiple_choice_question",
+      "question_text": "<p>Which of these validations is most appropriate for making sure that a model's&nbsp;<strong>title</strong> is at least 20 letters long?</p>\n<p>Check the <a class=\"inline_disabled\" href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\" target=\"_blank\">Active Record Validations docs</a> if you need help!</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 5971,
+          "text": "validates :title, length: { minimum: 20 }",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": 7721,
+          "text": "validates :title, at_least: 20",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        },
+        {
+          "id": 4941,
+          "text": "validates :title, minimum: 20",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        },
+        {
+          "id": 7227,
+          "text": "validates :title, letters: { minimum: 20 }",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18303,
+      "id": 123898,
+      "quiz_group_id": null,
+      "assessment_question_id": 134165,
+      "position": null,
+      "question_name": "Validations",
+      "question_type": "short_answer_question",
+      "question_text": "<div>\n<pre><span>Fill in the blank. What code would you need to write to return an array of pre-formatted error messages if the dog is not valid?<br><br>def</span> <span>create</span><br><span>  dog</span> <span>=</span> <span>Dog</span><span>.</span><span>create</span><span>(</span><span>name:</span> <span>\"Fezzik\"</span><span>)</span><br><span>  if</span> <span>dog</span><span>.</span><span>valid?</span><br><span>    render</span> <span>json:</span> <span>dog</span><span>, </span><span>status:</span> <span>:</span><span>created</span><br><span>  else<br></span><span>    render</span> <span>json:</span><span> { </span><span>errors:</span> <span>[blank]</span><span> }, </span><span>status:</span> <span>:</span><span>unprocessable_entity</span><br><span>  end</span><br><span>end</span></pre>\n</div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "<p>To return an&nbsp;<strong>array</strong> of pre-formatted error messages, use the <code>.errors.full_messages</code> method as show <a class=\"inline_disabled external\" href=\"https://guides.rubyonrails.org/active_record_validations.html#working-with-validation-errors-errors\" target=\"_blank\"><span>here</span><span class=\"ui-icon ui-icon-extlink ui-icon-inline\" title=\"Links to an external site.\"><span class=\"screenreader-only\">Links to an external site.</span></span></a>.</p>",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": "433",
+          "text": "dog.errors.full_messages",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18303,
+      "id": 123899,
+      "quiz_group_id": null,
+      "assessment_question_id": 134156,
+      "position": null,
+      "question_name": "Validations",
+      "question_type": "multiple_choice_question",
+      "question_text": "<p>Which of the following HTTP status codes should be returned from the controller if a model's data is not valid?</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 5053,
+          "text": "422 (Unprocessable Entity)",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": 1033,
+          "text": "418 (I'm a teapot)",
+          "html": "",
+          "comments": "",
+          "comments_html": "<p>This is an actual status code that was created for an <a class=\"inline_disabled external\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418\" target=\"_blank\"><span>April Fool's joke</span><span class=\"ui-icon ui-icon-extlink ui-icon-inline\" title=\"Links to an external site.\"><span class=\"screenreader-only\">Links to an external site.</span></span></a> .</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 3398,
+          "text": "500 (Internal Server Error)",
+          "html": "",
+          "comments": "",
+          "comments_html": "<p>500 Internal Server Error indicates that \"something went wrong on the server\", typically because of a runtime error on the server itself. You shouldn't return this status code from any controller actions directly; Rails will return this status code when your code encounters an error.</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 9602,
+          "text": "",
+          "html": "<p>404 (Not Found)</p>",
+          "comments": "",
+          "comments_html": "<p>This error indicates that the record itself wasn't found, not that the model's data was not valid.</p>",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    }
+  ]
+}
