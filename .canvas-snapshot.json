@@ -71,7 +71,7 @@
     "only_visible_to_overrides": false,
     "assignment_group_id": 8385,
     "show_correct_answers_last_attempt": true,
-    "version_number": 5,
+    "version_number": 6,
     "has_access_code": false,
     "post_to_sis": false,
     "migration_id": null,
@@ -100,7 +100,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/pages/active-record-validations\">Active Record Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 6250,
+          "id": 9062,
           "text": "",
           "comments": "",
           "comments_html": "<p>Right! Validations are triggered before most actions that save data to the\ndatabase.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
@@ -108,7 +108,7 @@
           "html": "<p><code>create</code></p>"
         },
         {
-          "id": 3625,
+          "id": 8188,
           "text": "",
           "comments": "",
           "comments_html": "<p>Right! Validations are triggered before most actions that save data to the\ndatabase.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
@@ -116,7 +116,7 @@
           "html": "<p><code>save</code></p>"
         },
         {
-          "id": 978,
+          "id": 4172,
           "text": "",
           "comments": "",
           "comments_html": "<p>Right! Validations are triggered before most actions that save data to the\ndatabase.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
@@ -124,7 +124,7 @@
           "html": "<p><code>update</code></p>"
         },
         {
-          "id": 3284,
+          "id": 1122,
           "text": "",
           "comments": "",
           "comments_html": "<p>Right! Even though calling <code>valid?</code> doesn't save any data to the database,\nit's a useful method to manually trigger validations.</p>",
@@ -132,7 +132,7 @@
           "html": "<p><code>valid?</code></p>"
         },
         {
-          "id": 2025,
+          "id": 2486,
           "text": "",
           "comments": "",
           "comments_html": "<p>Since <code>new</code> doesn't save any data to the database, it does not trigger\nvalidations. Validations are triggered before most actions that save data to\nthe database, such as <code>create</code> and <code>save</code>.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
@@ -140,7 +140,7 @@
           "html": "<p><code>new</code></p>"
         },
         {
-          "id": 9410,
+          "id": 4173,
           "text": "",
           "comments": "",
           "comments_html": "<p>Since we use <code>destroy</code> with objects that are already saved to the database,\nthere's no need to validate those objects before deleting them.</p>",
@@ -148,7 +148,7 @@
           "html": "<p><code>destroy</code></p>"
         },
         {
-          "id": 6825,
+          "id": 9984,
           "text": "",
           "comments": "",
           "comments_html": "<p><code>validates</code> is a class macro that is helpful for writing custom validation\nlogic. It can't be called directly on an Active Record object, and doesn't\ntrigger validation.</p>",
@@ -156,7 +156,7 @@
           "html": "<p><code>validates</code></p>"
         },
         {
-          "id": 1173,
+          "id": 1504,
           "text": "",
           "comments": "",
           "comments_html": "<p>The <code>errors</code> method returns a list of validation errors, but it doesn't\ntrigger validation itself. Validations are triggered before most actions that\nsave data to the database, such as <code>create</code> and <code>save</code>.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
@@ -164,7 +164,7 @@
           "html": "<p><code>errors</code></p>"
         },
         {
-          "id": 9178,
+          "id": 2675,
           "text": "",
           "comments": "",
           "comments_html": "",
@@ -197,7 +197,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/pages/active-record-validations\">Active Record Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 7677,
+          "id": 9267,
           "text": "",
           "comments": "",
           "comments_html": "<p>Right! Validations are triggered before most actions that save data to the\ndatabase.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
@@ -205,7 +205,7 @@
           "html": "<p>Before a new record is saved to the database</p>"
         },
         {
-          "id": 5813,
+          "id": 6955,
           "text": "",
           "comments": "",
           "comments_html": "<p>Right! Validations are triggered before most actions that save data to the\ndatabase.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
@@ -213,7 +213,7 @@
           "html": "<p>Before an existing record in the database is updated</p>"
         },
         {
-          "id": 3322,
+          "id": 5663,
           "text": "",
           "comments": "",
           "comments_html": "<p>This one is tricky! It's possible to create a new instance of a model using\nActive Record without saving that record to the database immediately. For\nexample:</p>\n<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"no\">Dog</span><span class=\"p\">.</span><span class=\"nf\">new</span><span class=\"p\">(</span><span class=\"ss\">name: </span><span class=\"s2\">\"Fezzik\"</span><span class=\"p\">)</span>\n<span class=\"c1\"># =&gt; creates a new dog instance</span>\n\n<span class=\"no\">Dog</span><span class=\"p\">.</span><span class=\"nf\">save</span>\n<span class=\"c1\"># =&gt; saves the dog to the database, triggering validation</span>\n</code></pre></div>",
@@ -221,7 +221,7 @@
           "html": "<p>Before a new instance of the model is created</p>"
         },
         {
-          "id": 6826,
+          "id": 5017,
           "text": "",
           "comments": "",
           "comments_html": "<p>Deleting a record from the database doesn't trigger validations; only creating\nor updating a record will cause the record to be validated.</p>",
@@ -229,12 +229,20 @@
           "html": "<p>Before an existing record is deleted from the database</p>"
         },
         {
-          "id": 2013,
+          "id": 3947,
           "text": "",
           "comments": "",
           "comments_html": "<p>Looking up data in the database doesn't trigger validations; only creating or\nupdating a record will cause the record to be validated.</p>",
           "weight": 0.0,
           "html": "<p>When an existing record is found in the database</p>"
+        },
+        {
+          "id": 6556,
+          "text": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0,
+          "html": "<p>I don't know.</p>"
         }
       ],
       "variables": null,
@@ -262,7 +270,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/pages/active-record-validations\">Active Record Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 9306,
+          "id": 3182,
           "text": "",
           "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:name</span><span class=\"p\">,</span> <span class=\"ss\">presence: </span><span class=\"kp\">true</span>\n</code></pre></div>",
           "comments": "",
@@ -270,7 +278,7 @@
           "weight": 100.0
         },
         {
-          "id": 733,
+          "id": 2020,
           "text": "",
           "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:name</span><span class=\"p\">,</span> <span class=\"ss\">length: </span><span class=\"p\">{</span> <span class=\"ss\">minimum: </span><span class=\"mi\">0</span> <span class=\"p\">}</span>\n</code></pre></div>",
           "comments": "",
@@ -278,7 +286,7 @@
           "weight": 0.0
         },
         {
-          "id": 1086,
+          "id": 975,
           "text": "",
           "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:name</span><span class=\"p\">,</span> <span class=\"ss\">inclusion: </span><span class=\"mi\">1</span><span class=\"o\">..</span><span class=\"mi\">10</span>\n</code></pre></div>",
           "comments": "",
@@ -286,7 +294,7 @@
           "weight": 0.0
         },
         {
-          "id": 1904,
+          "id": 3936,
           "text": "",
           "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:name</span><span class=\"p\">,</span> <span class=\"ss\">acceptance: </span><span class=\"kp\">true</span>\n</code></pre></div>",
           "comments": "",
@@ -294,7 +302,7 @@
           "weight": 0.0
         },
         {
-          "id": 3972,
+          "id": 3658,
           "text": "",
           "html": "<p>I don't know</p>",
           "comments": "",
@@ -327,7 +335,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/pages/active-record-validations\">Active Record Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 4929,
+          "id": 3614,
           "text": "",
           "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:category</span><span class=\"p\">,</span> <span class=\"ss\">inclusion: </span><span class=\"p\">[</span><span class=\"s2\">\"Fruit\"</span><span class=\"p\">,</span> <span class=\"s2\">\"Vegetable\"</span><span class=\"p\">]</span>\n</code></pre></div>",
           "comments": "",
@@ -335,7 +343,7 @@
           "weight": 100.0
         },
         {
-          "id": 49,
+          "id": 5143,
           "text": "",
           "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:category</span><span class=\"p\">,</span> <span class=\"ss\">must_be: </span><span class=\"p\">[</span><span class=\"s2\">\"Fruit\"</span><span class=\"p\">,</span> <span class=\"s2\">\"Vegetable\"</span><span class=\"p\">]</span>\n</code></pre></div>",
           "comments": "",
@@ -343,7 +351,7 @@
           "weight": 0.0
         },
         {
-          "id": 8121,
+          "id": 5486,
           "text": "",
           "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:category</span><span class=\"p\">,</span> <span class=\"ss\">one_of: </span><span class=\"p\">[</span><span class=\"s2\">\"Fruit\"</span><span class=\"p\">,</span> <span class=\"s2\">\"Vegetable\"</span><span class=\"p\">]</span>\n</code></pre></div>",
           "comments": "",
@@ -351,7 +359,7 @@
           "weight": 0.0
         },
         {
-          "id": 2983,
+          "id": 1311,
           "text": "",
           "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:category</span><span class=\"p\">,</span> <span class=\"ss\">presence: </span><span class=\"p\">{</span> <span class=\"ss\">in: </span><span class=\"p\">[</span><span class=\"s2\">\"Fruit\"</span><span class=\"p\">,</span> <span class=\"s2\">\"Vegetable\"</span><span class=\"p\">]</span> <span class=\"p\">}</span>\n</code></pre></div>",
           "comments": "",
@@ -359,7 +367,7 @@
           "weight": 0.0
         },
         {
-          "id": 1727,
+          "id": 8065,
           "text": "",
           "html": "<p>I don't know</p>",
           "comments": "",
@@ -392,7 +400,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/pages/active-record-validations\">Active Record Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 9103,
+          "id": 6767,
           "text": "",
           "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:title</span><span class=\"p\">,</span> <span class=\"ss\">length: </span><span class=\"p\">{</span> <span class=\"ss\">minimum: </span><span class=\"mi\">20</span> <span class=\"p\">}</span>\n</code></pre></div>",
           "comments": "",
@@ -400,7 +408,7 @@
           "weight": 100.0
         },
         {
-          "id": 9856,
+          "id": 1594,
           "text": "",
           "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:title</span><span class=\"p\">,</span> <span class=\"ss\">at_least: </span><span class=\"mi\">20</span>\n</code></pre></div>",
           "comments": "",
@@ -408,7 +416,7 @@
           "weight": 0.0
         },
         {
-          "id": 1628,
+          "id": 1322,
           "text": "",
           "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:title</span><span class=\"p\">,</span> <span class=\"ss\">minimum: </span><span class=\"mi\">20</span>\n</code></pre></div>",
           "comments": "",
@@ -416,7 +424,7 @@
           "weight": 0.0
         },
         {
-          "id": 8388,
+          "id": 6474,
           "text": "",
           "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:title</span><span class=\"p\">,</span> <span class=\"ss\">letters: </span><span class=\"p\">{</span> <span class=\"ss\">minimum: </span><span class=\"mi\">20</span> <span class=\"p\">}</span>\n</code></pre></div>",
           "comments": "",
@@ -424,7 +432,7 @@
           "weight": 0.0
         },
         {
-          "id": 3133,
+          "id": 502,
           "text": "",
           "html": "<p>I don't know</p>",
           "comments": "",
@@ -457,7 +465,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/assignments/115267\">Controller Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 8617,
+          "id": 7068,
           "text": "dog.errors.full_messages",
           "comments": "",
           "comments_html": "",
@@ -489,7 +497,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/assignments/115267\">Controller Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 999,
+          "id": 5982,
           "text": "",
           "html": "<p>422 (Unprocessable Entity)</p>",
           "comments": "",
@@ -497,7 +505,7 @@
           "weight": 100.0
         },
         {
-          "id": 1776,
+          "id": 5044,
           "text": "",
           "html": "<p>418 (I'm a teapot)</p>",
           "comments": "",
@@ -505,7 +513,7 @@
           "weight": 0.0
         },
         {
-          "id": 5420,
+          "id": 5831,
           "text": "",
           "html": "<p>500 (Internal Server Error)</p>",
           "comments": "",
@@ -513,7 +521,7 @@
           "weight": 0.0
         },
         {
-          "id": 8523,
+          "id": 6807,
           "text": "",
           "html": "<p>404 (Not Found)</p>",
           "comments": "",
@@ -521,7 +529,7 @@
           "weight": 0.0
         },
         {
-          "id": 5469,
+          "id": 2188,
           "text": "",
           "html": "<p>I don't know</p>",
           "comments": "",
