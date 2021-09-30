@@ -4,7 +4,7 @@
     "title": "Validations Quiz",
     "html_url": "https://learning.flatironschool.com/courses/4182/quizzes/18303",
     "mobile_url": "https://learning.flatironschool.com/courses/4182/quizzes/18303?force_user=1&persist_headless=1",
-    "description": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;It's time to check your knowledge! Use this quiz to create a custom study guide. Note any answers that were marked incorrect, so you can study the relevant material and try this quiz again.\\n\\nIf you don't know the answer to a question, please do not guess. Instead, select \\&quot;I don't know\\&quot;. It's OK not to know everything and to admit when we're unsure.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:33667,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:16573901},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;18&quot;:1}\">It's time to check your knowledge! Use this quiz to create a custom study guide. Note any answers that were marked incorrect, so you can study the relevant material and try this quiz again.<br><br>If you don't know the answer to a question, please do not guess. Instead, select \"I don't know\". It's OK not to know everything and to admit when we're unsure.</span></p>\n<p>Check the <a class=\"inline_disabled\" href=\"https://guides.rubyonrails.org/active_record_validations.html\" target=\"_blank\">Active Record Validations docs</a> if you need help!</p>",
+    "description": "<div id=\"git-data-element\" data-org=\"learn-co-curriculum\" data-repo=\"phase-4-quiz-validations\"></div>\n<header class=\"fis-header\">\n  <a class=\"fis-git-link\" href=\"https://github.com/learn-co-curriculum/phase-4-quiz-validations/issues/new\" target=\"_blank\"><img id=\"issue-img\" title=\"Create New Issue\" alt=\"Create New Issue\"></a>\n</header>\n\n<p>It's time to check your knowledge! Use this quiz to create a custom study guide.\nNote any answers that were marked incorrect, so you can study the relevant\nmaterial and try this quiz again.</p>\n\n<p>If you don't know the answer to a question, please do not guess. Instead, select\n\"I don't know\". It's OK not to know everything and to admit when we're unsure.</p>",
     "quiz_type": "assignment",
     "time_limit": null,
     "timer_autosubmit_disabled": false,
@@ -29,7 +29,7 @@
       "asset_string": "quizzes:quiz_18303"
     },
     "lock_explanation": "This quiz is currently locked.",
-    "hide_results": null,
+    "hide_results": "until_after_last_attempt",
     "show_correct_answers_at": null,
     "hide_correct_answers_at": null,
     "all_dates": [
@@ -71,7 +71,7 @@
     "only_visible_to_overrides": false,
     "assignment_group_id": 8385,
     "show_correct_answers_last_attempt": true,
-    "version_number": 4,
+    "version_number": 5,
     "has_access_code": false,
     "post_to_sis": false,
     "migration_id": null,
@@ -90,70 +90,86 @@
       "position": null,
       "question_name": "Validations",
       "question_type": "multiple_answers_question",
-      "question_text": "<p>Which of the following Active Record methods will trigger model validations?</p>",
+      "question_text": "<p>Which of the following Active Record methods will trigger validations?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/pages/active-record-validations\">Active Record Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": "3165",
-          "text": ".create",
+          "id": 6250,
+          "text": "",
           "comments": "",
-          "comments_html": "",
-          "weight": 100.0
+          "comments_html": "<p>Right! Validations are triggered before most actions that save data to the\ndatabase.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
+          "weight": 100.0,
+          "html": "<p><code>create</code></p>"
         },
         {
-          "id": "2099",
-          "text": ".save",
+          "id": 3625,
+          "text": "",
           "comments": "",
-          "comments_html": "",
-          "weight": 100.0
+          "comments_html": "<p>Right! Validations are triggered before most actions that save data to the\ndatabase.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
+          "weight": 100.0,
+          "html": "<p><code>save</code></p>"
         },
         {
-          "id": "4912",
-          "text": ".update",
+          "id": 978,
+          "text": "",
           "comments": "",
-          "comments_html": "",
-          "weight": 100.0
+          "comments_html": "<p>Right! Validations are triggered before most actions that save data to the\ndatabase.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
+          "weight": 100.0,
+          "html": "<p><code>update</code></p>"
         },
         {
-          "id": "7414",
-          "text": ".valid?",
+          "id": 3284,
+          "text": "",
           "comments": "",
-          "comments_html": "",
-          "weight": 100.0
+          "comments_html": "<p>Right! Even though calling <code>valid?</code> doesn't save any data to the database,\nit's a useful method to manually trigger validations.</p>",
+          "weight": 100.0,
+          "html": "<p><code>valid?</code></p>"
         },
         {
-          "id": "9556",
-          "text": ".new",
+          "id": 2025,
+          "text": "",
           "comments": "",
-          "comments_html": "",
-          "weight": 0.0
+          "comments_html": "<p>Since <code>new</code> doesn't save any data to the database, it does not trigger\nvalidations. Validations are triggered before most actions that save data to\nthe database, such as <code>create</code> and <code>save</code>.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
+          "weight": 0.0,
+          "html": "<p><code>new</code></p>"
         },
         {
-          "id": "740",
-          "text": ".destroy",
+          "id": 9410,
+          "text": "",
           "comments": "",
-          "comments_html": "",
-          "weight": 0.0
+          "comments_html": "<p>Since we use <code>destroy</code> with objects that are already saved to the database,\nthere's no need to validate those objects before deleting them.</p>",
+          "weight": 0.0,
+          "html": "<p><code>destroy</code></p>"
         },
         {
-          "id": "701",
-          "text": ".valdiate",
+          "id": 6825,
+          "text": "",
           "comments": "",
-          "comments_html": "",
-          "weight": 0.0
+          "comments_html": "<p><code>validates</code> is a class macro that is helpful for writing custom validation\nlogic. It can't be called directly on an Active Record object, and doesn't\ntrigger validation.</p>",
+          "weight": 0.0,
+          "html": "<p><code>validates</code></p>"
         },
         {
-          "id": "7949",
-          "text": ".errors",
+          "id": 1173,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>The <code>errors</code> method returns a list of validation errors, but it doesn't\ntrigger validation itself. Validations are triggered before most actions that\nsave data to the database, such as <code>create</code> and <code>save</code>.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
+          "weight": 0.0,
+          "html": "<p><code>errors</code></p>"
+        },
+        {
+          "id": 9178,
+          "text": "",
           "comments": "",
           "comments_html": "",
-          "weight": 0.0
+          "weight": 0.0,
+          "html": "<p>I don't know.</p>"
         }
       ],
       "variables": null,
@@ -171,49 +187,54 @@
       "position": null,
       "question_name": "Validations",
       "question_type": "multiple_answers_question",
-      "question_text": "<p>At what point in time in a model's lifecycle do validations run?</p>",
+      "question_text": "<p>At what point in time in a model's lifecycle do validations run? Select all that\napply.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/pages/active-record-validations\">Active Record Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": "4152",
-          "text": "Before a new record is saved to the database",
+          "id": 7677,
+          "text": "",
           "comments": "",
-          "comments_html": "",
-          "weight": 100.0
+          "comments_html": "<p>Right! Validations are triggered before most actions that save data to the\ndatabase.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
+          "weight": 100.0,
+          "html": "<p>Before a new record is saved to the database</p>"
         },
         {
-          "id": "6251",
-          "text": "Before an existing record in the database is updated",
+          "id": 5813,
+          "text": "",
           "comments": "",
-          "comments_html": "",
-          "weight": 100.0
+          "comments_html": "<p>Right! Validations are triggered before most actions that save data to the\ndatabase.\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#when-does-validation-happen-questionmark\">This list</a>\nshows other methods that trigger validations.</p>",
+          "weight": 100.0,
+          "html": "<p>Before an existing record in the database is updated</p>"
         },
         {
-          "id": "1409",
-          "text": "Before a new instance of the model is created",
+          "id": 3322,
+          "text": "",
           "comments": "",
-          "comments_html": "<p>This one is tricky! It's possible to create a new instance of a model using Active Record without saving that record to the database immediately. For example:</p>\n<div>\n<pre><span>Dog</span><span>.</span><span>new</span><span>(</span><span>name:</span> <span>\"Fezzik\"</span><span>)</span><br><span># =&gt; creates a new dog instance</span><br><br><span>Dog</span><span>.</span><span>save</span><br><span># =&gt; saves the dog to the database, triggering validation</span></pre>\n</div>",
-          "weight": 0.0
+          "comments_html": "<p>This one is tricky! It's possible to create a new instance of a model using\nActive Record without saving that record to the database immediately. For\nexample:</p>\n<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"no\">Dog</span><span class=\"p\">.</span><span class=\"nf\">new</span><span class=\"p\">(</span><span class=\"ss\">name: </span><span class=\"s2\">\"Fezzik\"</span><span class=\"p\">)</span>\n<span class=\"c1\"># =&gt; creates a new dog instance</span>\n\n<span class=\"no\">Dog</span><span class=\"p\">.</span><span class=\"nf\">save</span>\n<span class=\"c1\"># =&gt; saves the dog to the database, triggering validation</span>\n</code></pre></div>",
+          "weight": 0.0,
+          "html": "<p>Before a new instance of the model is created</p>"
         },
         {
-          "id": "1642",
-          "text": "Before an existing record is deleted from the database",
+          "id": 6826,
+          "text": "",
           "comments": "",
-          "comments_html": "<p>Deleting a record from the database doesn't trigger validations; only creating or updating a record will cause the record to be validated.</p>",
-          "weight": 0.0
+          "comments_html": "<p>Deleting a record from the database doesn't trigger validations; only creating\nor updating a record will cause the record to be validated.</p>",
+          "weight": 0.0,
+          "html": "<p>Before an existing record is deleted from the database</p>"
         },
         {
-          "id": "8155",
-          "text": "When an existing record is found in the database",
+          "id": 2013,
+          "text": "",
           "comments": "",
-          "comments_html": "<p>Looking up data in the database doesn't trigger validations; only creating or updating a record will cause the record to be validated.</p>",
-          "weight": 0.0
+          "comments_html": "<p>Looking up data in the database doesn't trigger validations; only creating or\nupdating a record will cause the record to be validated.</p>",
+          "weight": 0.0,
+          "html": "<p>When an existing record is found in the database</p>"
         }
       ],
       "variables": null,
@@ -231,43 +252,51 @@
       "position": null,
       "question_name": "Validations",
       "question_type": "multiple_choice_question",
-      "question_text": "<p>Which of these validations is most appropriate for making sure that a model's&nbsp;<strong>name</strong> is not empty?</p>\n<p>Check the <a class=\"inline_disabled\" href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\" target=\"_blank\">Active Record Validations docs</a> if you need help!</p>",
+      "question_text": "<p>Which of these validations is most appropriate for making sure that a model's\n<strong>name</strong> is not blank?</p>\n\n<p>Check the <a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Active Record Validations docs</a> if you need help!</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/pages/active-record-validations\">Active Record Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 7760,
-          "text": "validates :name, presence: true",
-          "html": "",
+          "id": 9306,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:name</span><span class=\"p\">,</span> <span class=\"ss\">presence: </span><span class=\"kp\">true</span>\n</code></pre></div>",
           "comments": "",
-          "comments_html": "",
+          "comments_html": "<p>Bingo! This method won't allow <code>name</code> to be <code>nil</code> when being created or\nupdated. Check the <a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Rails Guide on Validations</a> for more info.</p>",
           "weight": 100.0
         },
         {
-          "id": 579,
-          "text": "validates :name, length: { minimum: 0 }",
-          "html": "",
+          "id": 733,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:name</span><span class=\"p\">,</span> <span class=\"ss\">length: </span><span class=\"p\">{</span> <span class=\"ss\">minimum: </span><span class=\"mi\">0</span> <span class=\"p\">}</span>\n</code></pre></div>",
           "comments": "",
-          "comments_html": "",
+          "comments_html": "<p>Close, but this will actually still allow <code>name</code> to be created or updated with\nan empty string as a value. Check the\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Rails Guide on Validations</a> for more info.</p>",
           "weight": 0.0
         },
         {
-          "id": 415,
-          "text": "validates :name, inclusion: 1..10",
-          "html": "",
+          "id": 1086,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:name</span><span class=\"p\">,</span> <span class=\"ss\">inclusion: </span><span class=\"mi\">1</span><span class=\"o\">..</span><span class=\"mi\">10</span>\n</code></pre></div>",
           "comments": "",
-          "comments_html": "",
+          "comments_html": "<p><code>inclusion</code> is helpful for checking if a value is contained in a set of\npossible values. Check the <a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Rails Guide on Validations</a> for more\ninfo.</p>",
           "weight": 0.0
         },
         {
-          "id": 4707,
-          "text": "validates :name, acceptance: true",
-          "html": "",
+          "id": 1904,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:name</span><span class=\"p\">,</span> <span class=\"ss\">acceptance: </span><span class=\"kp\">true</span>\n</code></pre></div>",
+          "comments": "",
+          "comments_html": "<p><code>acceptance</code> is helpful for checking if a boolean value is true, like if a\nterms of service checkbox was checked by a user. Check the\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Rails Guide on Validations</a> for more info.</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 3972,
+          "text": "",
+          "html": "<p>I don't know</p>",
           "comments": "",
           "comments_html": "",
           "weight": 0.0
@@ -288,43 +317,51 @@
       "position": null,
       "question_name": "Validations",
       "question_type": "multiple_choice_question",
-      "question_text": "<p>Which of these validations is most appropriate for making sure that a model's&nbsp;<strong>category</strong> must be either \"Fruit\" or \"Vegetable\"?</p>\n<p>Check the <a class=\"inline_disabled\" href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\" target=\"_blank\">Active Record Validations docs</a> if you need help!</p>",
+      "question_text": "<p>Which of these validations is most appropriate for making sure that a\nmodel's <strong>category</strong> must be either \"Fruit\" or \"Vegetable\"?</p>\n\n<p>Check the <a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Active Record Validations docs</a> if you need help!</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/pages/active-record-validations\">Active Record Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 378,
-          "text": "validates :category, inclusion: { in: [\"Fruit\", \"Vegetable\" }",
-          "html": "",
+          "id": 4929,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:category</span><span class=\"p\">,</span> <span class=\"ss\">inclusion: </span><span class=\"p\">[</span><span class=\"s2\">\"Fruit\"</span><span class=\"p\">,</span> <span class=\"s2\">\"Vegetable\"</span><span class=\"p\">]</span>\n</code></pre></div>",
           "comments": "",
-          "comments_html": "",
+          "comments_html": "<p>Right! <code>inclusion</code> is helpful for checking if a value is contained in a set of\npossible values. Check the <a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Rails Guide on Validations</a> for more\ninfo.</p>",
           "weight": 100.0
         },
         {
-          "id": 6485,
-          "text": "validates :category, must_be: [\"Fruit\", \"Vegetable\"]",
-          "html": "",
+          "id": 49,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:category</span><span class=\"p\">,</span> <span class=\"ss\">must_be: </span><span class=\"p\">[</span><span class=\"s2\">\"Fruit\"</span><span class=\"p\">,</span> <span class=\"s2\">\"Vegetable\"</span><span class=\"p\">]</span>\n</code></pre></div>",
           "comments": "",
-          "comments_html": "",
+          "comments_html": "<p><code>must_be</code> isn't a valid validation helper. Check the\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Rails Guide on Validations</a> for more info.</p>",
           "weight": 0.0
         },
         {
-          "id": 1482,
-          "text": "validates :category, one_of: [\"Fruit\", \"Vegetable\"]",
-          "html": "",
+          "id": 8121,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:category</span><span class=\"p\">,</span> <span class=\"ss\">one_of: </span><span class=\"p\">[</span><span class=\"s2\">\"Fruit\"</span><span class=\"p\">,</span> <span class=\"s2\">\"Vegetable\"</span><span class=\"p\">]</span>\n</code></pre></div>",
           "comments": "",
-          "comments_html": "",
+          "comments_html": "<p><code>one_of</code> isn't a valid validation helper. Check the\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Rails Guide on Validations</a> for more info.</p>",
           "weight": 0.0
         },
         {
-          "id": 764,
-          "text": "validates :category, presence: { in: [\"Fruit\", \"Vegetable\"] }",
-          "html": "",
+          "id": 2983,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:category</span><span class=\"p\">,</span> <span class=\"ss\">presence: </span><span class=\"p\">{</span> <span class=\"ss\">in: </span><span class=\"p\">[</span><span class=\"s2\">\"Fruit\"</span><span class=\"p\">,</span> <span class=\"s2\">\"Vegetable\"</span><span class=\"p\">]</span> <span class=\"p\">}</span>\n</code></pre></div>",
+          "comments": "",
+          "comments_html": "<p><code>presence</code> is useful for validating that an attribute is not blank, but it\ndoesn't help check if an item is in a set of items. Check the\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Rails Guide on Validations</a> for more info.</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 1727,
+          "text": "",
+          "html": "<p>I don't know</p>",
           "comments": "",
           "comments_html": "",
           "weight": 0.0
@@ -345,43 +382,51 @@
       "position": null,
       "question_name": "Validations",
       "question_type": "multiple_choice_question",
-      "question_text": "<p>Which of these validations is most appropriate for making sure that a model's&nbsp;<strong>title</strong> is at least 20 letters long?</p>\n<p>Check the <a class=\"inline_disabled\" href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\" target=\"_blank\">Active Record Validations docs</a> if you need help!</p>",
+      "question_text": "<p>Which of these validations is most appropriate for making sure that a\nmodel's <strong>title</strong> is at least 20 letters long?</p>\n\n<p>Check the <a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Active Record Validations docs</a> if you need help!</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/pages/active-record-validations\">Active Record Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 5971,
-          "text": "validates :title, length: { minimum: 20 }",
-          "html": "",
+          "id": 9103,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:title</span><span class=\"p\">,</span> <span class=\"ss\">length: </span><span class=\"p\">{</span> <span class=\"ss\">minimum: </span><span class=\"mi\">20</span> <span class=\"p\">}</span>\n</code></pre></div>",
           "comments": "",
-          "comments_html": "",
+          "comments_html": "<p>Right! <code>length</code> is helpful for checking the length of an attribute. Check the\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Rails Guide on Validations</a> for more info.</p>",
           "weight": 100.0
         },
         {
-          "id": 7721,
-          "text": "validates :title, at_least: 20",
-          "html": "",
+          "id": 9856,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:title</span><span class=\"p\">,</span> <span class=\"ss\">at_least: </span><span class=\"mi\">20</span>\n</code></pre></div>",
           "comments": "",
-          "comments_html": "",
+          "comments_html": "<p><code>at_least</code> isn't a valid validation helper. Check the\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Rails Guide on Validations</a> for more info.</p>",
           "weight": 0.0
         },
         {
-          "id": 4941,
-          "text": "validates :title, minimum: 20",
-          "html": "",
+          "id": 1628,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:title</span><span class=\"p\">,</span> <span class=\"ss\">minimum: </span><span class=\"mi\">20</span>\n</code></pre></div>",
           "comments": "",
-          "comments_html": "",
+          "comments_html": "<p><code>minimum</code> isn't a valid validation helper. Check the\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Rails Guide on Validations</a> for more info.</p>",
           "weight": 0.0
         },
         {
-          "id": 7227,
-          "text": "validates :title, letters: { minimum: 20 }",
-          "html": "",
+          "id": 8388,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">validates</span> <span class=\"ss\">:title</span><span class=\"p\">,</span> <span class=\"ss\">letters: </span><span class=\"p\">{</span> <span class=\"ss\">minimum: </span><span class=\"mi\">20</span> <span class=\"p\">}</span>\n</code></pre></div>",
+          "comments": "",
+          "comments_html": "<p><code>letters</code> isn't a valid validation helper. Check the\n<a href=\"https://guides.rubyonrails.org/active_record_validations.html#validation-helpers\">Rails Guide on Validations</a> for more info.</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 3133,
+          "text": "",
+          "html": "<p>I don't know</p>",
           "comments": "",
           "comments_html": "",
           "weight": 0.0
@@ -402,17 +447,17 @@
       "position": null,
       "question_name": "Validations",
       "question_type": "short_answer_question",
-      "question_text": "<div>\n<pre><span>Fill in the blank. What code would you need to write to return an array of pre-formatted error messages if the dog is not valid?<br><br>def</span> <span>create</span><br><span>  dog</span> <span>=</span> <span>Dog</span><span>.</span><span>create</span><span>(</span><span>name:</span> <span>\"Fezzik\"</span><span>)</span><br><span>  if</span> <span>dog</span><span>.</span><span>valid?</span><br><span>    render</span> <span>json:</span> <span>dog</span><span>, </span><span>status:</span> <span>:</span><span>created</span><br><span>  else<br></span><span>    render</span> <span>json:</span><span> { </span><span>errors:</span> <span>[blank]</span><span> }, </span><span>status:</span> <span>:</span><span>unprocessable_entity</span><br><span>  end</span><br><span>end</span></pre>\n</div>",
+      "question_text": "<p>Fill in the blank in this controller action. What code would you need to write\nto return an array of pre-formatted error messages if the dog is not valid?</p>\n<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"k\">def</span> <span class=\"nf\">create</span>\n  <span class=\"n\">dog</span> <span class=\"o\">=</span> <span class=\"no\">Dog</span><span class=\"p\">.</span><span class=\"nf\">create</span><span class=\"p\">(</span><span class=\"ss\">name: </span><span class=\"s2\">\"Fezzik\"</span><span class=\"p\">)</span>\n  <span class=\"k\">if</span> <span class=\"n\">dog</span><span class=\"p\">.</span><span class=\"nf\">valid?</span>\n    <span class=\"n\">render</span> <span class=\"ss\">json: </span><span class=\"n\">dog</span><span class=\"p\">,</span> <span class=\"ss\">status: :created</span>\n  <span class=\"k\">else</span>\n    <span class=\"n\">render</span> <span class=\"ss\">json: </span><span class=\"p\">{</span> <span class=\"ss\">errors: </span><span class=\"n\">_________</span> <span class=\"p\">},</span> <span class=\"ss\">status: :unprocessable_entity</span>\n  <span class=\"k\">end</span>\n<span class=\"k\">end</span>\n</code></pre></div>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "<p>To return an&nbsp;<strong>array</strong> of pre-formatted error messages, use the <code>.errors.full_messages</code> method as show <a class=\"inline_disabled external\" href=\"https://guides.rubyonrails.org/active_record_validations.html#working-with-validation-errors-errors\" target=\"_blank\"><span>here</span><span class=\"ui-icon ui-icon-extlink ui-icon-inline\" title=\"Links to an external site.\"><span class=\"screenreader-only\">Links to an external site.</span></span></a>.</p>",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/assignments/115267\">Controller Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": "433",
+          "id": 8617,
           "text": "dog.errors.full_messages",
           "comments": "",
           "comments_html": "",
@@ -434,45 +479,53 @@
       "position": null,
       "question_name": "Validations",
       "question_type": "multiple_choice_question",
-      "question_text": "<p>Which of the following HTTP status codes should be returned from the controller if a model's data is not valid?</p>",
+      "question_text": "<p>Of the following HTTP status codes, which is the most appropriate to return from\nthe controller if a model's data is not valid?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/4182/assignments/115267\">Controller Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 5053,
-          "text": "422 (Unprocessable Entity)",
-          "html": "",
+          "id": 999,
+          "text": "",
+          "html": "<p>422 (Unprocessable Entity)</p>",
           "comments": "",
-          "comments_html": "",
+          "comments_html": "<p>Right! To quote the\n<a href=\"https://datatracker.ietf.org/doc/html/rfc4918#section-11.2\">spec</a>: The 422\n(Unprocessable Entity) status code means the server understands the content\ntype of the request entity, and the syntax of the request entity is correct,\nbut was unable to process the contained instructions. There are some\n<a href=\"https://stackoverflow.com/a/20215807\">differences of opinions on this</a>, but\nsince Rails uses a 422 status code out of the box, this is a good convention\nto follow.</p>",
           "weight": 100.0
         },
         {
-          "id": 1033,
-          "text": "418 (I'm a teapot)",
-          "html": "",
+          "id": 1776,
+          "text": "",
+          "html": "<p>418 (I'm a teapot)</p>",
           "comments": "",
-          "comments_html": "<p>This is an actual status code that was created for an <a class=\"inline_disabled external\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418\" target=\"_blank\"><span>April Fool's joke</span><span class=\"ui-icon ui-icon-extlink ui-icon-inline\" title=\"Links to an external site.\"><span class=\"screenreader-only\">Links to an external site.</span></span></a> .</p>",
+          "comments_html": "<p>This is an actual status code that was created for an\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418\">April Fool's joke</a>!</p>",
           "weight": 0.0
         },
         {
-          "id": 3398,
-          "text": "500 (Internal Server Error)",
-          "html": "",
+          "id": 5420,
+          "text": "",
+          "html": "<p>500 (Internal Server Error)</p>",
           "comments": "",
-          "comments_html": "<p>500 Internal Server Error indicates that \"something went wrong on the server\", typically because of a runtime error on the server itself. You shouldn't return this status code from any controller actions directly; Rails will return this status code when your code encounters an error.</p>",
+          "comments_html": "<p>500 Internal Server Error indicates that \"something went wrong on the server\",\ntypically because of a runtime error on the server itself. You shouldn't\nreturn this status code from any controller actions directly; Rails will\nreturn this status code when your code encounters an error.</p>",
           "weight": 0.0
         },
         {
-          "id": 9602,
+          "id": 8523,
           "text": "",
           "html": "<p>404 (Not Found)</p>",
           "comments": "",
-          "comments_html": "<p>This error indicates that the record itself wasn't found, not that the model's data was not valid.</p>",
+          "comments_html": "<p>This error indicates that the record itself wasn't found, not that the model's\ndata was not valid.</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 5469,
+          "text": "",
+          "html": "<p>I don't know</p>",
+          "comments": "",
+          "comments_html": "",
           "weight": 0.0
         }
       ],
